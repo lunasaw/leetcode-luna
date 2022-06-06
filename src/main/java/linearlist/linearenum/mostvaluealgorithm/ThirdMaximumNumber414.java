@@ -1,4 +1,4 @@
-package linearlist.linearenum;
+package linearlist.linearenum.mostvaluealgorithm;
 
 import java.util.TreeSet;
 
