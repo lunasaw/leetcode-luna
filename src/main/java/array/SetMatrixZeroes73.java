@@ -89,7 +89,7 @@ public class SetMatrixZeroes73 {
     public void setZeroes2(int[][] matrix) {
         // 行 [i][0]
         int m = matrix.length,
-                // 列 [0][j]
+                // 列数 [0][j]
                 n = matrix[0].length;
         boolean flagCol0 = false, flagRow0 = false;
         for (int i = 0; i < m; i++) {
@@ -130,5 +130,40 @@ public class SetMatrixZeroes73 {
                 matrix[0][j] = 0;
             }
         }
+    }
+
+    /**
+     * 我们可以对方法二进一步优化，只使用一个标记变量记录第一列是否原本存在 00。这样，第一列的第一个元素即可以标记第一行是否出现 00。
+     * 但为了防止每一列的第一个元素被提前更新，我们需要从最后一行开始，倒序地处理矩阵元素。
+     *
+     * @param matrix
+     */
+    public void setZeroes3(int[][] matrix) {
+        // 行 [i][0]
+        int m = matrix.length,
+                // 列数 [0][j]
+                n = matrix[0].length;
+        boolean flagCol0 = false;
+        for (int i = 0; i < m; i++) {
+            if (matrix[i][0] == 0) {
+                flagCol0 = true;
+            }
+            for (int j = 1; j < n; j++) {
+                if (matrix[i][j] == 0) {
+                    matrix[i][0] = matrix[0][j] = 0;
+                }
+            }
+        }
+        for (int i = m - 1; i >= 0; i--) {
+            for (int j = 1; j < n; j++) {
+                if (matrix[i][0] == 0 || matrix[0][j] == 0) {
+                    matrix[i][j] = 0;
+                }
+            }
+            if (flagCol0) {
+                matrix[i][0] = 0;
+            }
+        }
+
     }
 }
