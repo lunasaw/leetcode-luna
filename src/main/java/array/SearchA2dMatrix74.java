@@ -91,7 +91,7 @@ public class SearchA2dMatrix74 {
     public boolean searchMatrix2(int[][] matrix, int target) {
         // 先首列二分 再行二分
         int i = binarySearchFirstColumn(matrix, target);
-        if (i < 0){
+        if (i < 0) {
             return false;
         }
         return binarySearchRow(matrix[i], target);
