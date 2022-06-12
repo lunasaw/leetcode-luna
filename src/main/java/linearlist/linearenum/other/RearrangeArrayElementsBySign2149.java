@@ -1,4 +1,4 @@
-package linearlist.linearenum.situalgorithm;
+package linearlist.linearenum.other;
 
 import java.util.Arrays;
 

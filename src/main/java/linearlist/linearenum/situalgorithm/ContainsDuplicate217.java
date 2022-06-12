@@ -1,11 +1,6 @@
 package linearlist.linearenum.situalgorithm;
 
-import com.google.common.collect.Lists;
-import org.apache.commons.collections4.CollectionUtils;
-import org.apache.commons.lang3.ArrayUtils;
-
 import java.util.*;
-import java.util.stream.Collectors;
 
 /**
  * @author luna
