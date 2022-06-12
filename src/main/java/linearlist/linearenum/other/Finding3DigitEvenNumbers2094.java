@@ -183,7 +183,6 @@ public class Finding3DigitEvenNumbers2094 {
             cur[c]++;
         }
 
-
         return res.stream().mapToInt(Integer::intValue).toArray();
     }
 }
