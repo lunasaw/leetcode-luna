@@ -41,6 +41,7 @@ public class FindTheHighestAltitude1732 {
         System.out.println(i);
     }
 
+
     public int largestAltitude(int[] gain) {
         int ans = -10000, sum = 0;
         for (int i: gain) {
