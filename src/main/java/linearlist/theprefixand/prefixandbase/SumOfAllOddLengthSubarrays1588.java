@@ -54,7 +54,10 @@ public class SumOfAllOddLengthSubarrays1588 {
      * @param args
      */
     public static void main(String[] args) {
+        int[] nums = new int[]{1,4,2,5,3};
 
+        int i = new SumOfAllOddLengthSubarrays1588().sumOddLengthSubarrays2(nums);
+        System.out.println(i);
     }
 
     /**
@@ -105,16 +108,19 @@ public class SumOfAllOddLengthSubarrays1588 {
         int n = arr.length;
         int[] prefixSums = new int[n + 1];
         for (int i = 0; i < n; i++) {
+            // prefixSums[i] 表示数组 arr 从下标 0 到下标 i - 1 的元素和
             prefixSums[i + 1] = prefixSums[i] + arr[i];
         }
         int sum = 0;
         for (int start = 0; start < n; start++) {
-            for (int length = 1; start + length <= n; length += 2) {
-                int end = start + length - 1;
+            for (int length = 1; start + length < n; length += 2) {
+                int end = start + length;
                 sum += prefixSums[end + 1] - prefixSums[start];
             }
         }
         return sum;
+
+
     }
 
 }
