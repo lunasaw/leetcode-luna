@@ -162,6 +162,7 @@ public class TwoOutOfThree2032 {
                 ret.add(i);
             }
         }
+
         return ret;
     }
 

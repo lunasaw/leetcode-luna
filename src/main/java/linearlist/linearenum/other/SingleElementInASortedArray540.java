@@ -44,7 +44,7 @@ public class SingleElementInASortedArray540 {
     /**
      * 复杂度分析
      * <p>
-     * 时间复杂度：O(\log n)O(logn)，其中 nn 是数组 \textit{nums}nums 的长度。需要在全数组范围内二分查找，
+     * 时间复杂度：O(\log n)O(logn)，其中 nn 是数组 {nums}nums 的长度。需要在全数组范围内二分查找，
      * 二分查找的时间复杂度是 O(\log n)O(logn)。
      * <p>
      * 空间复杂度：O(1)O(1)。

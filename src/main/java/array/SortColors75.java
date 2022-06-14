@@ -55,7 +55,7 @@ public class SortColors75 {
      * <p>
      * 复杂度分析
      * <p>
-     * 时间复杂度：O(n)O(n)，其中 nn 是数组 \textit{nums}nums 的长度。
+     * 时间复杂度：O(n)O(n)，其中 nn 是数组 {nums}nums 的长度。
      * <p>
      * 空间复杂度：O(1)O(1)。
      *
@@ -86,7 +86,7 @@ public class SortColors75 {
     /**
      * 复杂度分析
      *
-     * 时间复杂度：O(n)O(n)，其中 nn 是数组 \textit{nums}nums 的长度。
+     * 时间复杂度：O(n)O(n)，其中 nn 是数组 {nums}nums 的长度。
      *
      * 空间复杂度：O(1)O(1)。
      * 双指针
