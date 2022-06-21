@@ -65,3 +65,6 @@ public class XorQueriesOfASubarray1310 {
         return ans;
     }
 }
+
+
+
